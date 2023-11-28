@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>(+01) - 2345 - 6789</span>
+
+            <span>Our location</span>
+          </div>
+
+          <p class="header-alert-news">Super Value Deals - Save more with coupons</p>
+
+          <a href="login-register.html" class="header-top-action">Log In / Sign up</a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/1.png" alt="" class="nav-logo-img">
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+ 
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link active-link">My Accounts</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+
+          </ul>
+
+          <div class="header-search">
+            <input type="text" placeholder="Search for items..." class="form-input">
+            <button class="search-btn">
+              <img src="assets/img/search.png" alt=""/>
+            </button>
+          </div>
+        </div>
+
+        <div class="header-user-actions">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list flex container">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Account</span></li>
+        </ul>
+      </section>
+
+      <!--=============== ACCOUNTS ===============-->
+      <section class="accounts section--lg">
+        <div class="accounts-container container grid">
+          <div class="account-tabs">
+            <p class="account-tab active-tab" data-target="#dashboard">
+              <i class="fa-solid fa-sliders"></i> DashboAV BV
+            </p>
+
+            <p class="account-tab" data-target="#orders">
+              <i class="fa-solid fa-bag-shopping"></i> Orders
+            </p>
+
+            <p class="account-tab" data-target="#update-profile">
+              <i class="fa-solid fa-user"></i> Update Profile
+            </p>
+
+            <p class="account-tab" data-target="#address">
+              <i class="fa-solid fa-marker"></i> My Address
+            </p>
+
+            <p class="account-tab" data-target="#change-password">
+              <i class="fa-solid fa-user"></i> Change Password
+            </p>
+
+            <p class="account-tab">
+              <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </p>
+          </div>
+
+          <div class="tabs-content">
+            <div class="tab-content active-tab" content id="dashboard">
+              <h3 class="tab-header">Hello Patrick</h3>
+
+              <div class="tab-body">
+                <p class="tab-description">
+                  From your Account Dashboard. you can easily check and view your recent orders, manage your shipping and billing address and
+                  edit your password and account details
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="orders">
+              <h3 class="tab-header">Your Orders</h3>
+
+              <div class="tab-body">
+                <table class="placed__order-table">
+                  <tr>
+                    <th>Orders</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                  </tr>
+
+                  <tr>
+                    <td>#12345</td>
+                    <td>April 20,2024</td>
+                    <td>Processing</td>
+                    <td>₱5,000</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>#12345</td>
+                    <td>May 20,2024</td>
+                    <td>Completed</td>
+                    <td>₱3,000</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>#12345</td>
+                    <td>June 20,2024</td>
+                    <td>Processing</td>
+                    <td>₱5,000</td>
+                    <td><a href="#" class="view-order">View</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="update-profile">
+              <h3 class="tab-header">Update Profile</h3>
+
+              <div class="tab-body">
+                <form action="" class="form grid">
+                  <input type="text" placeholder="Username" class="form-input">
+
+                  <div class="form-btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="address">
+              <h3 class="tab-header">Shipping Address</h3>
+
+              <div class="tab-body">
+                <address class="address">
+                  475 Manggahn st.<br> Pulong Buhangin Santa Maria.
+                </address>
+                <p class="Province">Bulacan</p>
+                <a href="" class="edit">Edit</a>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="change-password">
+              <h3 class="tab-header">Change Password</h3>
+
+              <div class="tab-body">
+                <form action="" class="form grid">
+                  <input type="password" placeholder="Current Password" class="form-input">
+                  <input type="password" placeholder="New Password" class="form-input">
+                  <input type="password" placeholder="Confirm Password" class="form-input">
+
+                  <div class="form-btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img src="assets/img/icon-email.svg" alt="" class="newsletter-icon"/>
+            Sign up to newsletter
+          </h3>
+         
+          <p class="newsletter-description">... and recieve ₱100 coupon for first shopping.</p>
+    
+          <form action="" class="newsletter-form">
+            <input type="text" placeholder="Enter your email " class="newsletter-input">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer-container grid">
+        <div class="footer-content">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/img/1.png" alt="" class="footer-logo-img">
+          </a>
+    
+          <h4 class="footer-subtitle">Contact</h4>
+    
+          <p class="footer-description"><span>Address:</span> Garden Village Pulong Buhangin SMB.</p>
+          
+          <p class="footer-description"><span>Cellphone:</span> 09612152351</p>
+    
+          <p class="footer-description"><span>Email Address:</span> patrickbillones@gmail.com.</p>
+    
+          <div class="footer-social">
+            <h4 class="footer-subtitle">Follow Me</h4>
+    
+            <div class="footer-social-links flex">
+              <a href="">
+                <img src="assets/img/icon-facebook.svg" alt="" class="footer-social-icon">
+              </a>
+    
+              <a href="">
+                <img src="assets/img/icon-twitter.svg" alt="" class="footer-social-icon">
+              </a>
+    
+              <a href="">
+                <img src="assets/img/icon-instagram.svg" alt="" class="footer-social-icon">
+              </a>
+    
+              <a href="">
+                <img src="assets/img/icon-pinterest.svg" alt="" class="footer-social-icon">
+              </a>
+    
+              <a href="">
+                <img src="assets/img/icon-youtube.svg" alt="" class="footer-social-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-content">
+          <h3 class="footer-title">Address</h3>
+    
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">About Us</a></li>
+            <li><a href="" class="footer-link">Delivery Information</a></li>
+            <li><a href="" class="footer-link">Privacy Policy</a></li>
+            <li><a href="" class="footer-link">Terms & Condition</a></li>
+            <li><a href="" class="footer-link">Contact Us</a></li>
+            <li><a href="" class="footer-link">Support Center</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-content">
+          <h3 class="footer-title">My Account</h3>
+    
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">Sign In</a></li>
+            <li><a href="" class="footer-link">View Cart</a></li>
+            <li><a href="" class="footer-link">My Wishlist</a></li>
+            <li><a href="" class="footer-link">Track My Order</a></li>
+            <li><a href="" class="footer-link">Help</a></li>
+            <li><a href="" class="footer-link">Order</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-content">
+          <h3 class="footer-title">Secured Payment Gateaways</h3>
+    
+          <img src="assets/img/payment-method.png" alt="" class="payment-img">
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Patrick. All rights reserved</p>
+        <span class="designer">Designed by Voidcoder</span>
+      </div>
+    </footer>
+
+  <!--=============== SWIPER JS ===============-->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+</script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+  </body>
+</html>
